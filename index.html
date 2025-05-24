@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TEJ Application Project</title>
-    <style>
+    <link rel="stylesheet" href="styles.css">
+    <!-- <style>
       .item {
         margin-bottom: 30px;
         border-bottom: 1px solid #000000;
@@ -16,9 +17,10 @@
         border-bottom: 1px solid #000000;
         padding-bottom: 20px;
       }
-    </style>
+    </style> -->
   </head>
   <body>
+    <div class="container">
     <div>
       <span
         ><h1 style="border-bottom: 1px solid black">
@@ -26,7 +28,7 @@
         </h1></span
       >
     </div>
-    <div class="item" id="item-samosa">
+    <div class="item" id="samosa">
       <h2>Samosa</h2>
       <span><label>Price: </label><input type="Number" /></span><br /><br />
       <span
@@ -34,7 +36,7 @@
         <span id="quantity-samosa">0</span>
         <button>-</button></span
       ><br /><br />
-      <span><label>Total: 0</label></span>
+      <span><label id="samosa-total">Total: </label>0</span>
     </div>
 
     <div class="item" id="Tea">
@@ -42,23 +44,24 @@
       <span><label>Price: </label><input type="Number" /></span><br /><br />
       <span
         ><label>Quantity: </label> <button>+</button>
-        <span id="quantity-samosa">0</span>
+        <span id="quantity-tea">0</span>
         <button>-</button></span
       ><br /><br />
-      <span><label>Total: 0</label></span>
+      <span><label id="tea-total">Total: 0</label></span>
     </div>
 
     <div class="total">
-      <span>Total price: 0</span><br />
-      <span>Vat(13%): 0</span><br />
-      <span>Tip (10%): 0</span><br />
+      <span id="total-price">Total price:</span> 0<br/><br>
+      <span>Vat(13%): <span id="vat-total">0</span></span><br /><br>
+      <span>Tip (10%): <span id = "tip-total">0</span></span><br />
     </div>
 
-    <div>
+    <div class="grand-total">
       <span
-        ><label>Grand Total: 0</label><br />
+        ><label id="grand-total-label">Grand Total:</label> 0 <br /><br>
         <button>Calculate grand total</button>
       </span>
+    </div>
     </div>
   </body>
 </html>
